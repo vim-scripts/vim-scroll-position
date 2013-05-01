@@ -31,6 +31,15 @@ Highlighting example                      *scroll-position-highlight*
 Marker for current position.
 
 
+*g:scroll_position_visual*
+---------------------------------------------------------------------
+(default: 1)
+Ways to display visual range.
+0: Do not display visual range (fast)
+1: Place signs on the beginning and the end of the range
+2: Displays the entire range with signs (slow)
+
+
 *g:scroll_position_visual_begin*
 ---------------------------------------------------------------------
 (default: "^")
@@ -73,8 +82,15 @@ Marker for the latest change position.
 Vimscript condition for disabling scroller.
 
 
+*g:scroll_position_auto_enable*
+---------------------------------------------------------------------
+(default: undefined)
+Set g:scroll_position_auto_enable to 0 in order not to enable plugin
+by default. You can later enable it with :ScrollPositionShow command.
+
+
 =====================================================================
-FUNCTIONS
+COMMANDS
 
 *:ScrollPositionShow*
 ---------------------------------------------------------------------

@@ -1,7 +1,7 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=4476
 
 Displays the relative position of the cursor within the buffer on the left side of the screen using the `sign` feature.
-This plugin is experimental and might slow down rendering of Vim.
+This plugin is experimental and might slow down the rendering of Vim.
 
 https://github.com/junegunn/vim-scroll-position
 
@@ -17,6 +17,9 @@ let g:scroll_position_visual_overlap = '<>'
 " Additional markers disabled by default due to slow rendering
 " let g:scroll_position_jump = '-'
 " let g:scroll_position_change = '+'
+
+" Not to enable plugin by default
+" let g:scroll_position_auto_enable = 0
 
 set t_Co=256
 
